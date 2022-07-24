@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/spiderman.jfif);
+}
+
+.section {
+  display: flex;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 40vh;
+  width: 35vw;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  border-color: orange;
+}
+
+::placeholder {
+  color: rgb(83, 15, 83);
+}
+
+label {
+  color: white;
+  height: 30px;
+}
+
+p {
+  color: white;
+}
+
+.buttom {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.send {
+  height: 12vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: rgba(194, 91, 18, 0.897);
+}
+
+button:hover {
+  animation: flash 4s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50%) translateY(50%);
+  }
+  75% {
+    transform: translateX(75%) translateY(0);
+  }
+  100% {
+    transform: translateX(100%) translateY(0);
+  }
+}
+form:hover {
+  animation: flash 4s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0% {
+    background-color: rgb(122, 228, 228);
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    background-color: rgb(3, 80, 7);
+    transform: translateX(50%) translateY(50%);
+  }
+  75% {
+    background-color: rgb(225, 241, 72);
+    transform: translateX(75%) translateY(0);
+  }
+  100% {
+    background-color: rgb(104, 245, 111);
+    transform: translateX(100%) translateY(0);
+  }
+}
